@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-4 order-md-2 mb-4">
+      <div class="alert alert-warning">hi</div>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <div class="row">
+        <app-movie-card
+          class="col-6 mb-4"
+          *ngFor="let movie of trendingMovies"
+        ></app-movie-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row mt-4">
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <h4 style="border-left: 3px solid orange; padding-left: 5px">
+          TRINDING
+        </h4>
+      </div>
+      <div
+        class="col-sm col-lg-4 border border-warning border-top-0 border-bottom-0 fa-border-left-0"
+      >
+        veiw app
+      </div>
+      <div class="row mt-3">
+        <app-movie-card
+          class="col-6 mb-4"
+          *ngFor="let movie of trendingMovies"
+        ></app-movie-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">a</div>
+    </div>
+    <div class="col-sm col-lg-4"></div>
+  </div>
+</div> -->
