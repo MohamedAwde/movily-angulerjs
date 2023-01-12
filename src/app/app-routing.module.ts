@@ -6,9 +6,9 @@ import { MovieComponent } from './components/movie/movie.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'movie/:movieid', component: MovieComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'movie', component: MovieComponent },
   { path: '**', component: HomeComponent },
 ];
 

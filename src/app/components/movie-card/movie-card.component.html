@@ -1,21 +1,16 @@
-<div class="col">
-  <div class="card">
-    <img
-      class="card-img-top"
-      src="./../../../assets/img/about-bg.jpg"
-      alt="Card image cap"
-    />
-    <div class="card-body">
-      <h5 class="card-title">Movie title</h5>
+<div class="col-lg-6 mb-4" *ngFor="let movie of moviesList">
+  <a
+    [routerLink]="'/movie/' + movie.id"
+    style="text-decoration: none; color: inherit"
+  >
+    <div class="card">
+      <img class="card-img-top" [src]="movie.cover" alt="Card image cap" />
       <div class="card-body">
-        <div class="ratings">
-          <i class="fa fa-star rating-color"></i>
-          <i class="fa fa-star rating-color"></i>
-          <i class="fa fa-star rating-color"></i>
-          <i class="fa fa-star rating-color"></i>
-          <i class="fa fa-star"></i>
+        <h5 class="card-title">{{ movie.name }}</h5>
+        <div class="card-body">
+          <app-ratings [rating]="movie.rating"></app-ratings>
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </div>

@@ -11,6 +11,7 @@ import { MovieComponent } from './components/movie/movie.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
+import { RatingsComponent } from './components/ratings/ratings.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
     MovieComponent,
     HeaderComponent,
     MovieCardComponent,
+    RatingsComponent,
   ],
   imports: [
     BrowserModule,
